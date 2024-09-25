@@ -1,0 +1,17 @@
+{
+  "name": "janicelaursenlmp",
+  "version": "1.0.0",
+  "description": "massage site",
+  "main": "index.js",
+  "repository": "https://github.com/pnwlady/janicelaursenlmp.git",
+  "author": "Heidi Laursen <heidilaursen@yahoo.com>",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "deploy": "aws s3 sync . s3://janicelaursenlmp.com",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "license": "MIT",
+  "private": false
+}

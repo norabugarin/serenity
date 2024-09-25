@@ -1,0 +1,273 @@
+/*
+  Theme colors
+    All selectors with colors that would need
+    to be changed for theme changes
+*/
+
+/*
+  COLORS
+
+  Sky
+    rgb(52, 152, 219)
+
+  Dark Blue
+    rgb(44, 62, 80)
+
+  Grey
+    rgb(127, 140, 141)
+
+  Cloud
+    rgb(236, 240, 241)
+*/
+
+.background--skyBlue {
+  background-color: rgb(52, 152, 219);
+}
+.background--image {
+  min-height: 30vh;
+  width: 100%;
+  background: url(../images/hands_header.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0 auto;
+}
+@media screen and (min-width: 420px) {
+  .background--image {
+    min-height: 60vh;
+  }
+}
+.photo-credit {
+  font-size: 1.4rem;
+  color:blanchedalmond;
+  float: right;
+  display: block;
+  margin-right:20px;
+}
+@media screen and (min-width: 420px) {
+  .photo-credit {
+    margin-top: -20px;
+  }
+}
+
+.color--skyBlue {
+  color: rgb(52, 152, 219);
+}
+
+.color--cloud {
+  color: rgb(236, 240, 241);
+}
+
+.color--grey {
+  color: rgb(127, 140, 141);
+}
+
+.color--darkgrey {
+  color: rgb(44, 62, 80);
+}
+
+.section__example {
+  background-color: rgb(44, 62, 80);
+}
+
+/*
+  General Styles
+    These are styles to be inherited
+    through parent containers
+*/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Cardo', serif;
+  margin: 0 auto;
+}
+@media (min-width: 420px) { 
+  body {
+    width: 80vw;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: .1rem;
+}
+p {
+  line-height: 1.3;
+  font-size: 2rem;
+}
+.description_small {
+  font-size: 2.6rem;
+  line-height: 1.5;
+}
+
+/*
+  Helpers
+*/
+
+.margin--none {
+  margin: 0;
+}
+
+.overflow--auto {
+  overflow: auto;
+}
+
+/*
+  Show more
+*/
+#more {display: none;}
+
+#showMoreButton {
+  color: white;
+  border: rgb(52, 152, 219);
+  background: rgb(52, 152, 219);
+  width: 175px;
+  margin: 20px;
+  padding:10px;
+  justify-content: center;
+}
+#showMoreButton:hover {
+  color: grey;
+  background: rgb(236, 240, 241);
+  border: rgb(52, 152, 219);
+}
+
+/*
+  Sections
+*/
+.section-head {
+  font-size: 4rem;
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 420px) {
+  .section-head {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+.section {
+  font-size: 3.6rem;
+  min-height: 12vh;
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 420px) {
+  .section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.section--alignCentered {
+  text-align: center;
+}
+
+.section--description {
+  font-size: 2.8rem;
+  padding: 2rem 4rem;
+}
+
+.section__description {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  width: 80%;
+}
+.section__text--header {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  transform: translate(-40%, -40%);
+}
+@media screen and (min-width: 420px) {
+  .section__text--header {
+    top: 40%;
+    left: 40%;
+  }
+}
+
+.section__text--centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section__exampleWrapper,
+.section__example {
+  display: inline-block;
+  height: 23rem;
+  width: 23rem;
+}
+
+.section__exampleWrapper {
+  margin: 2rem 3rem;
+}
+
+.section__example {
+  border-radius: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.section__example:hover {
+  transition: 0.05s all;
+  width: 24rem;
+  height: 24rem;
+}
+
+.section__exampleTitle{
+  font-size: 4rem;
+  font-weight: 400;
+  font-style: bold;
+  font-family: monospace;
+  text-align: center;
+  width: 90%;
+}
+
+.section__exampleImage {
+  opacity: 0.55;
+  width: 220%;
+  margin-left: -50%;
+  margin-top: -50%;
+}
+
+/*
+  Header
+*/
+
+.section__heading--largest {
+  float: left;
+  font-size: 4rem;
+  margin-left: 2rem;
+  max-height: 4vh;
+}
+
+.nobullet {
+  list-style-type: none;
+}
+
+button {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-color: #4CAF50;
+  color: green;
+  border-radius: 4%;
+}
+button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+button > a {
+  text-decoration: none;
+  color: black;
+}
